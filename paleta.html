@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paleta Completa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #FDECF1;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #3A3A3A;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #3A3A3A;
+      border-bottom: 2px solid #F87599;
+      padding-bottom: 5px;
+    }
+
+    .palette {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 150px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .color, .gradient {
+      height: 100px;
+      width: 150px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .info {
+      padding: 10px;
+      background: #FFFFFF;
+    }
+
+    .info p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #3A3A3A;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Paleta Completa</h1>
+
+  <!-- 1️⃣ Cores Primárias (Branding) -->
+  <h2>Cores Primárias (Branding)</h2>
+  <div class="palette">
+    <div class="card">
+      <div class="color" style="background:#F9AFC4"></div>
+      <div class="info"><p>Rosa Pastel</p><p>#F9AFC4</p></div>
+    </div>
+    <div class="card">
+      <div class="color" style="background:#F87599"></div>
+      <div class="info"><p>Rosa Intenso</p><p>#F87599</p></div>
+    </div>
+    <div class="card">
+      <div class="color" style="background:#BDE5D2"></div>
+      <div class="info"><p>Verde Menta</p><p>#BDE5D2</p></div>
+    </div>
+    <div class="card">
+      <div class="color" style="background:#FFF1C9"></div>
+      <div class="info"><p>Amarelo Creme</p><p>#FFF1C9</p></div>
+    </div>
+    <div class="card">
+      <div class="color" style="background:#F16D8E"></div>
+      <div class="info"><p>Rosa Escuro</p><p>#F16D8E</p></div>
+    </div>
+  </div>
+
+  <!-- 2️⃣ Cores Secundárias e de Apoio -->
+  <h2>Cores Secundárias e de Apoio</h2>
+  <div class="palette">
+    <div class="card"><div class="color" style="background:#FBE4EA"></div><div class="info"><p>Rosa Pálido</p><p>#FBE4EA</p></div></div>
+    <div class="card"><div class="color" style="background:#3A3A3A"></div><div class="info"><p>Cinza Escuro</p><p>#3A3A3A</p></div></div>
+    <div class="card"><div class="color" style="background:#5A5A5A"></div><div class="info"><p>Cinza Médio</p><p>#5A5A5A</p></div></div>
+    <div class="card"><div class="color" style="background:#EAEAEA"></div><div class="info"><p>Cinza Claro</p><p>#EAEAEA</p></div></div>
+    <div class="card"><div class="color" style="background:#FFFFFF"></div><div class="info"><p>Branco Gelo</p><p>#FFFFFF</p></div></div>
+    <div class="card"><div class="color" style="background:#E8D6F7"></div><div class="info"><p>Lilás Claro</p><p>#E8D6F7</p></div></div>
+  </div>
+
+  <!-- 3️⃣ Gradientes -->
+  <h2>Gradientes</h2>
+  <div class="palette">
+    <div class="card"><div class="gradient" style="background:linear-gradient(135deg, #F9AFC4, #FFFFFF)"></div><div class="info"><p>Rosa → Branco</p><p>linear-gradient</p></div></div>
+    <div class="card"><div class="gradient" style="background:linear-gradient(135deg, #F87599, #FFF1C9)"></div><div class="info"><p>Rosa → Amarelo</p><p>linear-gradient</p></div></div>
+    <div class="card"><div class="gradient" style="background:linear-gradient(135deg, #BDE5D2, #FFF1C9)"></div><div class="info"><p>Verde → Amarelo</p><p>linear-gradient</p></div></div>
+    <div class="card"><div class="gradient" style="background:linear-gradient(135deg, #F87599, #F9AFC4)"></div><div class="info"><p>Rosa Intenso → Rosa Pastel</p><p>linear-gradient</p></div></div>
+  </div>
+
+  <!-- 4️⃣ Backgrounds -->
+  <h2>Backgrounds</h2>
+  <div class="palette">
+    <div class="card"><div class="color" style="background:#FDECF1"></div><div class="info"><p>Fundo Principal</p><p>#FDECF1</p></div></div>
+    <div class="card"><div class="color" style="background:#FFFFFF"></div><div class="info"><p>Fundo Secundário</p><p>#FFFFFF</p></div></div>
+    <div class="card"><div class="gradient" style="background:linear-gradient(135deg, #F9AFC4, #FFF1C9)"></div><div class="info"><p>Fundo Destacado</p><p>linear-gradient</p></div></div>
+    <div class="card"><div class="color" style="background:#FBE4EA"></div><div class="info"><p>Fundo Informativo</p><p>#FBE4EA</p></div></div>
+    <div class="card"><div class="color" style="background:#EAEAEA"></div><div class="info"><p>Fundo Formulário</p><p>#EAEAEA</p></div></div>
+    <div class="card"><div class="color" style="background:#FFF5F7"></div><div class="info"><p>Fundo Hover</p><p>#FFF5F7</p></div></div>
+  </div>
+
+  <!-- 5️⃣ Textos e Tipografia -->
+  <h2>Textos e Tipografia</h2>
+  <div class="palette">
+    <div class="card"><div class="color" style="background:#3A3A3A"></div><div class="info"><p>Título Principal</p><p>#3A3A3A</p></div></div>
+    <div class="card"><div class="color" style="background:#5A5A5A"></div><div class="info"><p>Subtítulo / Destaque</p><p>#5A5A5A</p></div></div>
+    <div class="card"><div class="color" style="background:#3A3A3A"></div><div class="info"><p>Texto Corpo</p><p>#3A3A3A</p></div></div>
+    <div class="card"><div class="color" style="background:#5A5A5A"></div><div class="info"><p>Texto Secundário</p><p>#5A5A5A</p></div></div>
+    <div class="card"><div class="color" style="background:#FFFFFF"></div><div class="info"><p>Texto Claro</p><p>#FFFFFF</p></div></div>
+    <div class="card"><div class="color" style="background:#9E9E9E"></div><div class="info"><p>Placeholder / Input</p><p>#9E9E9E</p></div></div>
+  </div>
+
+  <!-- 6️⃣ Botões -->
+  <h2>Botões</h2>
+  <div class="palette">
+    <div class="card"><div class="color" style="background:#F87599"></div><div class="info"><p>Primário (CTA)</p><p>Texto: #FFFFFF</p></div></div>
+    <div class="card"><div class="color" style="background:#BDE5D2"></div><div class="info"><p>Secundário</p><p>Texto: #3A3A3A</p></div></div>
+    <div class="card"><div class="color" style="background:#EAEAEA"></div><div class="info"><p>Neutro</p><p>Texto: #3A3A3A</p></div></div>
+    <div class="card"><div class="color" style="background:#E57373"></div><div class="info"><p>Perigo / Exclusão</p><p>Texto: #FFFFFF</p></div></div>
+    <div class="card"><div class="color" style="background:#FDECF1; border:1px solid #F87599;"></div><div class="info"><p>Outline / Ghost</p><p>Texto: #F87599</p></div></div>
+    <div class="card"><div class="color" style="background:#F5F5F5"></div><div class="info"><p>Desativado</p><p>Texto: #B0B0B0</p></div></div>
+  </div>
+
+  <!-- 7️⃣ Feedbacks -->
+  <h2>Feedbacks (Status / Alerts)</h2>
+  <div class="palette">
+    <div class="card"><div class="color" style="background:#4CAF50"></div><div class="info"><p>Sucesso</p><p>#4CAF50</p></div></div>
+    <div class="card"><div class="color" style="background:#E53935"></div><div class="info"><p>Erro</p><p>#E53935</p></div></div>
+    <div class="card"><div class="color" style="background:#FFB74D"></div><div class="info"><p>Alerta</p><p>#FFB74D</p></div></div>
+    <div class="card"><div class="color" style="background:#42A5F5"></div><div class="info"><p>Informação</p><p>#42A5F5</p></div></div>
+    <div class="card"><div class="color" style="background:#BDE5D2"></div><div class="info"><p>Neutro / Suave</p><p>#BDE5D2</p></div></div>
+  </div>
+
+  <!-- 8️⃣ Badges e Tags -->
+  <h2>Badges e Tags</h2>
+  <div class="palette">
+    <div class="card"><div class="color" style="background:#BDE5D2"></div><div class="info"><p>Disponível / Ativo</p><p>#BDE5D2</p></div></div>
+    <div class="card"><div class="color" style="background:#E57373"></div><div class="info"><p>Indisponível / Erro</p><p>#E57373</p></div></div>
+    <div class="card"><div class="color" style="background:#F87599"></div><div class="info"><p>Destaque / Novo</p><p>#F87599</p></div></div>
+    <div class="card"><div class="color" style="background:#F9AFC4"></div><div class="info"><p>Fofo / Amigável</p><p>#F9AFC4</p></div></div>
+    <div class="card"><div class="color" style="background:#F16D8E"></div><div class="info"><p>Hover Badge</p><p>#F16D8E</p></div></div>
+  </div>
+
+    <!-- 9️⃣ Seções Extras / Elementos Interativos -->
+  <h2>Seções Extras / Elementos Interativos</h2>
+  <div class="palette">
+    <div class="card"><div class="color" style="background:#F87599"></div><div class="info"><p>Header</p><p>#F87599</p></div></div>
+    <div class="card"><div class="color" style="background:#F9AFC4"></div><div class="info"><p>Header Hover</p><p>#F9AFC4</p></div></div>
+    <div class="card"><div class="color" style="background:#3A3A3A"></div><div class="info"><p>Footer</p><p>#3A3A3A</p></div></div>
+    <div class="card"><div class="color" style="background:#F87599"></div><div class="info"><p>Footer Hover Links</p><p>#F87599</p></div></div>
+    <div class="card"><div class="color" style="background:#FFFFFF"></div><div class="info"><p>Card Padrão</p><p>#FFFFFF</p></div></div>
+    <div class="card"><div class="gradient" style="background:linear-gradient(135deg, #F9AFC4, #FFF1C9)"></div><div class="info"><p>Card Hover</p><p>linear-gradient</p></div></div>
+    <div class="card"><div class="color" style="background:#EAEAEA"></div><div class="info"><p>Input Padrão</p><p>#EAEAEA</p></div></div>
+    <div class="card"><div class="color" style="background:#F9AFC4"></div><div class="info"><p>Input Focus</p><p>#F9AFC4</p></div></div>
+    <div class="card"><div class="color" style="background:#BDE5D2"></div><div class="info"><p>Checkbox / Radio</p><p>#BDE5D2</p></div></div>
+    <div class="card"><div class="color" style="background:#E8D6F7"></div><div class="info"><p>Tooltip / Hint</p><p>#E8D6F7</p></div></div>
+    <div class="card"><div class="gradient" style="background:linear-gradient(135deg, #F87599, #BDE5D2)"></div><div class="info"><p>Ícones Ilustrativos</p><p>Rosa Intenso / Verde Menta / Amarelo Creme</p></div></div>
+  </div>
+</body>
+</html>
